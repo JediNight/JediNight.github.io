@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lagos City Surf Club</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="landingpage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src = "Phunco-SurfClub-logo_580.png"  width="150px" height="150px"  class="img-fluid" alt="Responsive image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">The Team</a>
+                    <a class="nav-item nav-link" href="#">Merchandise</a>
+                    <a class="nav-item nav-link active" data-toggle="modal" data-target="#exampleModal" href="#">Sign-up</a>
+                  </div>
+                </div>
+              </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form action="https://lagoscitysurf.us18.list-manage.com/subscribe/post?u=0b741b7d7c306f083ebbd2fbf&amp;id=0e1d9cd05d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Lagos City Surf Sign-up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <div class="form-group">
+                          <label for="EMAIL">Email address</label>
+                          <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0b741b7d7c306f083ebbd2fbf_0e1d9cd05d" tabindex="-1" value=""></div>
+                        <div class="form-feedback text-info"
+                              data-empty-msg="The fields can not be empty."
+                              data-incorrect-email="The format of the e-mail address is incorrect."
+                              data-thanks-msg="Thank you ! You will be redirected to "
+                              data-error-msg="A problem has occurred, please try again."
+                              data-mailchimp-notset="The link in the Mailchimp registration list is incorrect."
+                              data-mailchimp-notsecure="It is not possible to connect to the Mailchimp subscription list from a secure connection (https).">
+                      </div>
+                        <button type="submit" class="btn btn-primary" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>Processing">Submit</button>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+      <section id="main">
+                <div class = "pagecontainer">
+                <img class = "surf_back" src = "SurfB&W1.jpg" width = 100%>
+                <h1 class="page-title" data-content-field="title" data-shrink-original-size="100" style="letter-spacing: 0.08em;"><strong>Lagos City Surf Club</strong></h1>
+              </div>
+      </section>
+      <section id = "contact">
+                <div class = "contact-wrapper">Contact</div>
+      </section>
+      <section id= "gmaps">
+          <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+              height: 350px;  /* The height is 400 pixels */
+              width: 350px;  /* The width is the width of the web page */
+             }
+          </style>
+          <div id="map"></div>
+            <script>
+          // Initialize and add the map
+          function initMap() {
+            // The location of Uluru
+            var uluru = {lat: 6.445825999999999, lng: 3.4483609000000115};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 10, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBi0-ngaD7JaI7VBDT-yKuAenvZBubtts&callback=initMap">
+          </script>
+
+            </section>
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+                  <script src="https://cdn.rawgit.com/numee/jquery-mailchimp-bs-modal-subscriber/07d5cad7d8772e5d84b4c4cbaae9b9cab6916c5e/jquery-mailchimp-bs-modal-subscriber.js"></script>
+
+  </body>
+</html>
