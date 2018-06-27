@@ -60,43 +60,42 @@
           </div>
       <section id="main">
                 <div class = "pagecontainer">
-                <img class = "surf_back" src = "SurfB&W1.jpg" width = 100%>
-                <h1 class="page-title" data-content-field="title" data-shrink-original-size="100" style="letter-spacing: 0.08em;"><strong>Lagos City Surf Club</strong></h1>
-              </div>
+                    <img class = "surf_back" src = "SurfB&W1.jpg" width = 100%>
+                    <h1 class="page-title" data-content-field="title" data-shrink-original-size="100" style="letter-spacing: 0.08em;"><strong>Lagos City Surf Club</strong></h1>
+                </div>
       </section>
-      <section id = "contact">
+      <section id="contact">
                 <div class = "contact-wrapper">Contact</div>
       </section>
       <section id= "gmaps">
-          <style>
-            /* Set the size of the div element that contains the map */
-            #map {
-              height: 350px;  /* The height is 400 pixels */
-              width: 350px;  /* The width is the width of the web page */
-             }
-          </style>
-          <div id="map"></div>
-            <script>
-          // Initialize and add the map
-          function initMap() {
-            // The location of Uluru
-            var uluru = {lat: 6.445825999999999, lng: 3.4483609000000115};
-            var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 10, center: uluru});
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({position: uluru, map: map});
-          }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBi0-ngaD7JaI7VBDT-yKuAenvZBubtts&callback=initMap">
-          </script>
+              <style>
+                /* Set the size of the div element that contains the map */
+                #map {
+                  height: 350px;  /* The height is 400 pixels */
+                  width: 350px;  /* The width is the width of the web page */
+                 }
+              </style>
+              <div id="map"></div>
+              <script>
+                    // Initialize and add the map
+                    function initMap() {
+                      // The location of Uluru
+                      var uluru = {lat: 6.445825999999999, lng: 3.4483609000000115};
+                      var map = new google.maps.Map(
+                          document.getElementById('map'), {zoom: 10, center: uluru});
+                      // The marker, positioned at Uluru
+                      var marker = new google.maps.Marker({position: uluru, map: map});
+                    }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBi0-ngaD7JaI7VBDT-yKuAenvZBubtts&callback=initMap">
+              </script>
 
-            </section>
-
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-                  <script src="https://cdn.rawgit.com/numee/jquery-mailchimp-bs-modal-subscriber/07d5cad7d8772e5d84b4c4cbaae9b9cab6916c5e/jquery-mailchimp-bs-modal-subscriber.js"></script>
+      </section>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+            <script src="https://cdn.rawgit.com/numee/jquery-mailchimp-bs-modal-subscriber/07d5cad7d8772e5d84b4c4cbaae9b9cab6916c5e/jquery-mailchimp-bs-modal-subscriber.js"></script>
 
   </body>
 </html>
